@@ -84,10 +84,11 @@
 </div>
 
 <div class="main" id="main">
-    <h1 style="text-align: center;">HOME</h1>
-    <a class="btn" href="#">注文書一覧</a>
-    <a class="btn" href="#">顧客納品書一覧</a>
-    <a class="btn" href="#">統計情報一覧</a>
+    <li><a href="{{ url('/home') }}"><span style="font-size:1.2em;">&#8962;</span> <b>HOME</b></a></li>
+        <li><a href="{{ url('/orders') }}">・注文書一覧</a></li>
+        <li><a href="{{ url('/deliveries') }}">・購入納品書一覧</a></li>
+        <li><a href="{{ url('/stats') }}">・統計情報一覧</a></li>
+        <li><a href="{{ url('/trash') }}">・ゴミ箱</a></li>
 </div>
 
 <div class="notification">
