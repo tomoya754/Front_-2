@@ -100,14 +100,7 @@
     <a class="btn" href="{{ url('/deliveries') }}">顧客納品書一覧</a>
     <a class="btn" href="{{ url('/stats') }}">統計情報一覧</a>
 </div>
-<div class="notification">
-    <a href="{{ url('/notifications') }}">
-        <div class="bell">
-            🔔
-            <div class="red-dot">1</div>
-        </div>
-    </a>
-</div>
+
 <script>
     function toggleSidebar() {
         const sidebar = document.getElementById('sidebar');
