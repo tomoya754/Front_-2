@@ -52,30 +52,7 @@
             font-weight: bold;
             background: white;
         }
-        .notification {
-            position: absolute;
-            right: 40px;
-            top: 30px;
-            cursor: pointer;
-        }
-        .bell {
-            font-size: 36px;
-            position: relative;
-        }
-        .red-dot {
-            position: absolute;
-            top: -8px;
-            right: -8px;
-            background: red;
-            color: white;
-            border-radius: 50%;
-            width: 22px;
-            height: 22px;
-            text-align: center;
-            font-size: 14px;
-            line-height: 22px;
-            font-weight: bold;
-        }
+   
         h1 {
             text-align: center;
             font-size: 3rem;
