@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>顧客納品書一覧</title>
     <link rel="stylesheet" href="{{ asset('css/deliveries.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/home.css') }}">
 
 </head>
 <body>
