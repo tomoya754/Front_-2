@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>顧客納品書一覧</title>
     <link rel="stylesheet" href="{{ asset('css/deliveries.css') }}">
-    
+
 </head>
 <body>
 <div class="menu-btn" onclick="toggleSidebar()">☰</div>
