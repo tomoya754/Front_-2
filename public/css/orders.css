@@ -1,0 +1,178 @@
+.main {
+    padding: 32px 40px;
+}
+.orders-title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+.orders-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+.search-area {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border: 1.5px solid #aaa;
+    border-radius: 8px;
+    padding: 4px 12px;
+    width: 420px;
+}
+.search-icon {
+    font-size: 1.5em;
+    margin-right: 8px;
+}
+.search-input {
+    border: none;
+    outline: none;
+    font-size: 1.1em;
+    width: 260px;
+    background: transparent;
+}
+.filter-btn {
+    background: #eee;
+    border: none;
+    border-radius: 6px;
+    margin-left: 8px;
+    font-size: 1.4em;
+    cursor: pointer;
+    padding: 2px 8px;
+}
+.filter-panel {
+    display: none;
+    background: #fff;
+    border: 2px solid #222;
+    border-radius: 10px;
+    padding: 18px 24px;
+    margin-bottom: 18px;
+    width: 420px;
+    position: absolute;
+    top: 90px;
+    right: 80px;
+    z-index: 10;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+}
+.filter-panel.show {
+    display: block;
+}
+.filter-input {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: 2px 6px;
+    margin: 0 4px;
+}
+.filter-search-btn {
+    margin-top: 10px;
+    padding: 4px 24px;
+    font-size: 1.1em;
+    border-radius: 6px;
+    border: 1px solid #888;
+    background: #eee;
+    cursor: pointer;
+}
+.notification {
+    position: relative;
+    margin-left: 24px;
+}
+.bell {
+    font-size: 2.1em;
+    position: relative;
+}
+.red-dot {
+    position: absolute;
+    top: 0;
+    right: -8px;
+    background: #e00;
+    color: #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+.orders-table-area {
+    margin-top: 18px;
+    background: #fff;
+    border: 1.5px solid #222;
+    border-radius: 8px;
+    overflow-x: auto;
+    padding: 10px;
+}
+.orders-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.05em;
+}
+.orders-table th, .orders-table td {
+    border: 1px solid #888;
+    padding: 6px 8px;
+    text-align: center;
+}
+.orders-table th {
+    background: #e0e0e0;
+    font-weight: bold;
+}
+.orders-table td a {
+    color: #0070c0;
+    text-decoration: underline;
+}
+.orders-table .circle {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #222;
+    border-radius: 50%;
+    margin: 0 auto;
+    vertical-align: middle;
+}
+.orders-table .circle.selected {
+    background: #fff;
+    border: 2.5px solid #e00;
+}
+.orders-table td select {
+    font-size: 1em;
+    padding: 2px 8px;
+}
+.orders-btns {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin: 32px 0 0 0;
+}
+.create-btn {
+    background: #fff;
+    color: #222;
+    border: 2px solid #222;
+    font-size: 1.5em;
+    border-radius: 12px;
+    padding: 12px 48px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.create-btn:hover {
+    background: #f0f0f0;
+}
+.delete-btn {
+    background: #e00;
+    color: #fff;
+    border: 2px solid #e00;
+    font-size: 1.5em;
+    border-radius: 12px;
+    padding: 12px 48px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.delete-btn:hover {
+    background: #c00;
+}
+@media (max-width: 900px) {
+    .main { padding: 10px; }
+    .orders-toolbar, .filter-panel { width: 100%; }
+    .orders-table-area { padding: 2px; }
+}
