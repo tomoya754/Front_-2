@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>注文書一覧</title>
+    <link rel="stylesheet" href="{{ asset('css/home.css') }}">
     <style>
         body { font-family: Arial, sans-serif; margin: 0; }
         .sidebar {
@@ -108,10 +109,10 @@
 <div class="sidebar" id="sidebar">
     <ul>
         <li><a href="{{ url('/home') }}"><span style="font-size:1.2em;">&#8962;</span> <b>HOME</b></a></li>
-        <li><a href="{{ url('/orders') }}">・注文書一覧</a></li>
-        <li><a href="{{ url('/deliveries') }}">・購入納品書一覧</a></li>
-        <li><a href="{{ url('/stats') }}">・統計情報一覧</a></li>
-        <li><a href="{{ url('/trash') }}">・ゴミ箱</a></li>
+        <li><a href="{{ url('/orders') }}">注文書一覧</a></li>
+        <li><a href="{{ url('/deliveries') }}">購入納品書一覧</a></li>
+        <li><a href="{{ url('/stats') }}">統計情報一覧</a></li>
+        <li><a href="{{ url('/trash') }}">ゴミ箱</a></li>
     </ul>
 </div>
 <div class="main" id="main">
