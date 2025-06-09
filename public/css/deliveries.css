@@ -1,16 +1,18 @@
 
         body { font-family: Arial, sans-serif; margin: 0; }
         .sidebar {
-            width: 300px;
-            background: black;
-            color: white;
-            padding: 30px 0 0 0;
-            position: fixed;
-            top: 0;
-            left: -320px;
-            height: 100%;
-            transition: left 0.3s;
-            z-index: 100;
+            width: 260px;
+    background: #111;
+    color: #fff;
+    padding-top: 40px;
+    position: fixed;
+    top: 0;
+    left: -280px;
+    height: 100%;
+    transition: left 0.3s;
+    z-index: 1000;
+    border-right: 3px solid #fff;
+    box-sizing: border-box;
         }
         .sidebar.show { left: 0; }
         .sidebar ul { list-style: disc inside; padding: 0 0 0 30px; }
