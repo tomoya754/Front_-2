@@ -109,9 +109,9 @@
             </table>
         </div>
         <div class="orders-btns">
-            <button class="btn create-btn">新規注文書作成</button>
-            <button class="btn delete-btn">注文書削除</button>
-        </div>
+    <a href="{{ url('/order') }}" class="btn create-btn">新規注文書作成</a>
+    <button class="btn delete-btn">注文書削除</button>
+</div>
     </div>
     <script>
     function toggleFilter() {
