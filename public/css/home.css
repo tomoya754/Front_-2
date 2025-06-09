@@ -1,40 +1,60 @@
 /* public/css/home.css */
-    
-    h1 {
+
+body {
+    background: #f8f8f8;
+    margin: 0;
+    font-family: 'Meiryo', 'Arial', sans-serif;
+}
+
+.main {
+    max-width: 900px;
+    margin: 48px auto 0 auto;
+    padding: 40px 32px 64px 32px;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    min-height: 60vh;
+}
+
+h1 {
     text-align: center;
-    font-size: 6rem;
-    margin-bottom: 80px;
-    margin-top: 40px; /* 0 → 40px で少し上に */
+    font-size: 4rem;
+    margin-bottom: 48px;
+    margin-top: 32px;
     letter-spacing: 0.1em;
 }
+
 .btn {
     display: block;
-    width: 640px;
-    padding: 40px;
-    margin: 48px auto;
+    width: 420px;
+    max-width: 90vw;
+    padding: 32px;
+    margin: 32px auto;
     text-align: center;
-    border: 4px solid #111;
-    border-radius: 16px;
+    border: 3px solid #111;
+    border-radius: 14px;
     text-decoration: none;
     color: #111;
-    font-size: 2.8rem;
+    font-size: 2.2rem;
     font-weight: bold;
     background: #fff;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
     transition: background 0.2s, color 0.2s, border-color 0.2s;
 }
+
 .btn:hover {
     background: #111;
     color: #fff;
     border-color: #333;
     cursor: pointer;
 }
+
 .menu-btn {
     font-size: 36px;
     cursor: pointer;
     position: fixed;
-    top: 24px; /* 18px → 24px */
-    left: 24px; /* 18px → 24px */
+    top: 24px;
+    left: 24px;
     z-index: 1100;
     background: #fff;
     border-radius: 8px;
@@ -46,6 +66,7 @@
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     border: 1px solid #ddd;
 }
+
 .sidebar {
     width: 260px;
     background: #111;
@@ -61,6 +82,7 @@
     box-sizing: border-box;
 }
 .sidebar.open { left: 0; }
+
 .sidebar-bg {
     display: none;
     position: fixed;
@@ -69,6 +91,7 @@
     z-index: 900;
 }
 .sidebar-bg.show { display: block; }
+
 .sidebar-close {
     position: absolute;
     top: 10px;
@@ -77,6 +100,7 @@
     cursor: pointer;
     color: #fff;
 }
+
 .sidebar ul {
     list-style: none;
     padding: 0 0 0 24px;
@@ -95,10 +119,26 @@
 .sidebar a:hover {
     text-decoration: underline;
 }
+
 @media (max-width: 900px) {
-    .btn { width: 96vw; font-size: 2rem; padding: 24px; }
-    h1 { font-size: 3.5rem; margin-top: 24px; }
-    .menu-btn { left: 8px; top: 8px; }
-    .sidebar { width: 80vw; min-width: 180px; }
+    .main {
+        max-width: 98vw;
+        padding: 16px 2vw 32px 2vw;
+        border-radius: 0;
+        box-shadow: none;
+        margin: 12px auto 0 auto;
+    }
+    .btn {
+        width: 96vw;
+        font-size: 1.3rem;
+        padding: 18px;
+        border-radius: 10px;
+    }
+    h1 {
+        font-size: 2.2rem;
+        margin-top: 18px;
+        margin-bottom: 24px;
+    }
+    .menu-btn { left: 8px; top: 8px; width: 40px; height: 40px; font-size: 28px; }
+    .sidebar { width: 80vw; min-width: 160px; }
 }
-        
