@@ -185,14 +185,7 @@
         <button class="btn delete" onclick="showModal('delete')">削除</button>
     </div>
 </div>
-<div class="notification">
-    <a href="{{ url('/notifications') }}">
-        <div class="bell">
-            🔔
-            <div class="red-dot">1</div>
-        </div>
-    </a>
-</div>
+
 <!-- モーダル -->
 <div class="modal-bg" id="modal-bg">
     <div class="modal" id="modal-content">
