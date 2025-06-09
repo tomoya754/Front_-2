@@ -10,9 +10,6 @@ Route::get('/home', function () {
     return view('home');
 });
 
-Route::get('/notifications', function () {
-    return view('notifications');
-});
 
 
 Route::get('/orders', function () {
