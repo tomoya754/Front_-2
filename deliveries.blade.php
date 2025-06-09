@@ -152,14 +152,7 @@
         <button class="btn delete">納品書削除</button>
     </div>
 </div>
-<div class="notification">
-    <a href="{{ url('/notifications') }}">
-        <div class="bell">
-            🔔
-            <div class="red-dot">1</div>
-        </div>
-    </a>
-</div>
+
 <script type="text/javascript">
     function toggleSidebar() {
         const sidebar = document.getElementById('sidebar');

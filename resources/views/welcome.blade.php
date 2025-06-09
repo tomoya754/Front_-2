@@ -91,11 +91,7 @@
         <li><a href="{{ url('/trash') }}">・ゴミ箱</a></li>
 </div>
 
-<div class="notification">
-    <div class="bell" onclick="alert('通知一覧表示（未実装）')">
-        🔔
-        <div class="red-dot">1</div>
-    </div>
+
 </div>
 
 <script>

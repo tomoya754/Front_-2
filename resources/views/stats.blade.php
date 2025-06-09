@@ -91,14 +91,7 @@
     <a class="btn-stat" href="{{ url('/stats/sales') }}">顧客別累計売上</a>
     <a class="btn-stat" href="{{ url('/stats/leadtime') }}">顧客別リードタイム</a>
 </div>
-<div class="notification">
-    <a href="{{ url('/notifications') }}">
-        <div class="bell">
-            🔔
-            <div class="red-dot">1</div>
-        </div>
-    </a>
-</div>
+
 <script>
     function toggleSidebar() {
         const sidebar = document.getElementById('sidebar');

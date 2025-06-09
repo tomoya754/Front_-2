@@ -29,14 +29,7 @@
                     <span class="filter-icon">⏷</span>
                 </button>
             </div>
-            <div class="notification">
-                <a href="{{ url('/notifications') }}">
-                    <div class="bell">
-                        🔔
-                        <div class="red-dot">1</div>
-                    </div>
-                </a>
-            </div>
+            
         </div>
         <div class="filter-panel" id="filterPanel">
             <div>
