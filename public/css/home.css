@@ -65,6 +65,13 @@ h1 {
     justify-content: center;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     border: 1px solid #ddd;
+    transition: opacity 0.2s;
+}
+
+/* サイドバーが開いているときはメニューボタンを非表示 */
+.sidebar.open ~ .menu-btn,
+.sidebar.open + .menu-btn {
+    display: none !important;
 }
 
 .sidebar {

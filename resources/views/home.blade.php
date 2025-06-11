@@ -1,24 +1,24 @@
+<?php ?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
     <title>HOME</title>
     <link rel="stylesheet" href="{{ asset('css/home.css') }}">
-    
 </head>
 <body>
     <div class="menu-btn" id="menuBtn">☰</div>
-<div class="sidebar-bg" id="sidebarBg"></div>
-<div class="sidebar" id="sidebar">
-    <span class="sidebar-close" id="sidebarClose">&times;</span>
-    <ul>
-        <li><a href="{{ url('/home') }}"><span style="font-size:1.2em;">&#8962;</span> <b>HOME</b></a></li>
-        <li><a href="{{ url('/orders') }}">・注文書一覧</a></li>
-        <li><a href="{{ url('/deliveries') }}">・顧客納品書一覧</a></li>
-        <li><a href="{{ url('/stats') }}">・統計情報一覧</a></li>
-        <li><a href="{{ url('/trash') }}">・ゴミ箱</a></li>
-    </ul>
-</div>
+    <div class="sidebar-bg" id="sidebarBg"></div>
+    <div class="sidebar" id="sidebar">
+        <span class="sidebar-close" id="sidebarClose">&times;</span>
+        <ul>
+            <li><a href="{{ url('/home') }}"><span style="font-size:1.2em;">&#8962;</span> <b>HOME</b></a></li>
+            <li><a href="{{ url('/orders') }}">・注文書一覧</a></li>
+            <li><a href="{{ url('/deliveries') }}">・顧客納品書一覧</a></li>
+            <li><a href="{{ url('/stats') }}">・統計情報一覧</a></li>
+            <li><a href="{{ url('/trash') }}">・ゴミ箱</a></li>
+        </ul>
+    </div>
     <div class="main" id="main">
         <h1>HOME</h1>
         <a class="btn" href="{{ url('/orders') }}">注文書一覧</a>
@@ -36,10 +36,12 @@
         function openSidebar() {
             sidebar.classList.add('open');
             sidebarBg.classList.add('show');
+            menuBtn.style.display = 'none'; // サイドバー表示中はボタン非表示
         }
         function closeSidebar() {
             sidebar.classList.remove('open');
             sidebarBg.classList.remove('show');
+            menuBtn.style.display = 'flex'; // サイドバー閉じたらボタン表示
         }
 
         menuBtn.addEventListener('click', function (e) {
